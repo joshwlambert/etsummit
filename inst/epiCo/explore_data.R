@@ -43,7 +43,7 @@ col_incidence <- tibble::as_tibble(col_incidence)
 # plot the incidence over time
 ggplot2::ggplot(data = col_incidence) +
   ggplot2::geom_line(mapping = ggplot2::aes(x = dates, y = count)) +
-  ggplot2::scale_x_continuous(name = "Dates") +
+  ggplot2::scale_x_date(name = "Dates") +
   ggplot2::scale_y_continuous(name = "Colombia Incidence Count") +
   ggplot2::theme_bw()
 
@@ -104,7 +104,7 @@ ggplot2::ggplot(data = google_dengue_tidy_mos) +
   ggplot2::scale_x_date(name = "Dates") +
   ggplot2::scale_y_continuous(name = "Colombia Region Dengue Searches") +
   ggplot2::theme_bw() +
-  ggplot2::scale_colour_viridis_d(option="magma")
+  ggplot2::scale_colour_viridis_d(option = "magma")
 
 # facet plot by each search term
 ggplot2::ggplot(data = google_dengue_data_tidy) +
