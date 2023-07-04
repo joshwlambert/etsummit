@@ -27,7 +27,7 @@ We propose the following pipeline to tackle this issue:
 2.  Perform some cleaning and standardisation to get the 2 datasets at
     the same scale
 
-3.  Peform some descriptive statistics
+3.  Perform some descriptive statistics
 
 4.  Find variables or combination of variables that can be associated
     with the real dengue incidence using:
@@ -35,3 +35,6 @@ We propose the following pipeline to tackle this issue:
     - direct correlations
     - regression
     - PCA analysis
+
+5.  look for other potential variables and account for other factors
+    like internet access, etc
